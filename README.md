@@ -1,18 +1,15 @@
-# Workshop assignment 1.6: Pipe Dreams
+# Group assignment 1.6: Icy Dicey Propagation
 
-In this workshop you will apply the propagation laws for the mean and variance for a function of two independent random variables. You will assess how well the approximations correspond with the *simulation-based* equivalents. You will also assess the distribution of the function. Objectives:
+An ice layer grows during a cold spell. How reliable is a prediction of its thickness after five days? You will use the Stefan ice-growth model to compare the uncertainty predicted by Taylor approximations with uncertainty obtained by Monte Carlo simulation.
 
-1. Observe how uncertainty "propagates" from the inputs to the output of a function by estimating moments of the function of random variables and seeing how they change relative to the moments of the input random variables.
-2. Recognize that a non-linear function of random variables that have the (joint) Normal distribution (the inputs) produces a non-Normal random variable (the output).
-3. Using _sampling_ (Monte Carlo Simulation) to _validate_ the linearized error propagation technique introduced in the textbook. Specifically, by:
-   1. Comparing the estimated moments with that of the sample, and
-   2. Comparing the Normal distribution defined by the estimated moments to the sample
+You can preview this assignment in the [MUDE 2026 workbook](https://mude.citg.tudelft.nl/workbook-2026/assignments/GA1.6/README.html). The [version without solutions](https://mude.citg.tudelft.nl/workbook-2026/no_solutions/assignments/GA1.6/README.html) remains available. The workbook also provides a ZIP download of the assignment files.
 
-You can preview the instructions of this assignment on https://mude.citg.tudelft.nl/workbook-2026/assignments/WS1.6/README.html. After the deadline, this link will include solutions. The preview of the assignment version is shared here: https://mude.citg.tudelft.nl/workbook-2026/no_solutions/assignments/WS1.6/README.html. All files of the assignment can be downloaded as [`.zip`-file](https://mude.citg.tudelft.nl/workbook-2026/_custom_downloads/assignments/WS1.6/all_files_WS_1_6.zip) to your computer.
+**Friday group session:** during the first three hours, work through the [ice-growth notebook](./icey_dicey.ipynb) together and prepare handwritten reference notes. **At 11:30, close all laptops.** Your group will receive a separate set of questions to answer **by hand, without computers or other resources (including AI tools)**. You may consult the handwritten notes prepared during the first three hours. **Hand in your group's handwritten answers at 12:30.**
 
-Before you can start this assignment, read the theory pages in the [book](https://mude.citg.tudelft.nl/book/2026/propagation_uncertainty/overview.html).
+Before the session, read the [uncertainty propagation chapter](https://mude.citg.tudelft.nl/book/2026/propagation_uncertainty/overview.html), complete [Wednesday's workshop (Pipe Dreams)](https://mude.citg.tudelft.nl/workbook-2026/assignments/WS1.6/README.html) and the [programming assignment](https://mude.citg.tudelft.nl/workbook-2026/assignments/PA1.6/README.html).
 
-This assignment is due on 12:30, Wednesday, October 7, 2026.
+You will practice second-order mean propagation, first-order variance propagation, sampling a non-linear model, interpreting CDFs and checking the influence of input correlation. The written questions assess your mathematical reasoning and interpretation of your results, not your ability to recall Python syntax.
 
-> By Lotfi Massarweh and Sandra Verhagen, Delft University of Technology. CC BY 4.0, more info on the Credits page of Workbook.
+**Files:** [icey_dicey.ipynb](./icey_dicey.ipynb) (preparation and numerical analysis) and `report.md` (the one-hour written questions, distributed when laptops close). The report is deliberately not included in the initial student download; teachers will provide it at 11:30.
 
+> By Lotfi Massarweh and Sandra Verhagen, Delft University of Technology. CC BY 4.0, more info [on the Credits page of Workbook](https://mude.citg.tudelft.nl/workbook-2026/credits.html).
